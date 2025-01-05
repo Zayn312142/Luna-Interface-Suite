@@ -2270,7 +2270,6 @@ function Luna:CreateWindow(WindowSettings)
 	Main.Parent.ShadowHolder.Size = Main.Size
 	LoadingFrame.Frame.Frame.Title.TextTransparency = 1
 	LoadingFrame.Frame.Frame.Subtitle.TextTransparency = 1
-	LoadingFrame.Version.TextTransparency = 1
 	LoadingFrame.Frame.ImageLabel.ImageTransparency = 1
 
 	tween(Elements.Parent, {BackgroundTransparency = 1})
@@ -2278,7 +2277,6 @@ function Luna:CreateWindow(WindowSettings)
 
 	LoadingFrame.Frame.Frame.Title.Text = WindowSettings.LoadingTitle
 	LoadingFrame.Frame.Frame.Subtitle.Text = WindowSettings.LoadingSubtitle
-	LoadingFrame.Version.Text = LoadingFrame.Frame.Frame.Title.Text == "Luna Interface Suite" and Release or "Luna UI"
 
 	Navigation.Player.icon.ImageLabel.Image = Players:GetUserThumbnailAsync(Players.LocalPlayer.UserId, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size48x48)
 	Navigation.Player.Namez.Text = Players.LocalPlayer.DisplayName
